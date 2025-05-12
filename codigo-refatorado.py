@@ -60,9 +60,6 @@ def devolver_livro(biblioteca):
     else:
         print("❌ Digite um número válido!")
 
-# -------------------------
-# Função Principal Recursiva
-# -------------------------
 def main(biblioteca):
     opcao = exibir_menu()
 
