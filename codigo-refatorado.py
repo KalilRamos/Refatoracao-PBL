@@ -40,7 +40,7 @@ def emprestar_livro(biblioteca):
         if escolha in biblioteca and not biblioteca[escolha]["emprestado"]:
             biblioteca[escolha]["emprestado"] = True
             salvar_biblioteca(biblioteca)
-            print(f"✅ Livro '{biblioteca[escolha]['titulo']}' emprestado!")
+            print(f" Livro '{biblioteca[escolha]['titulo']}' emprestado!")
         else:
             print("❌ ID inválido ou livro já emprestado!")
     else:
@@ -54,11 +54,11 @@ def devolver_livro(biblioteca):
         if escolha in biblioteca and biblioteca[escolha]["emprestado"]:
             biblioteca[escolha]["emprestado"] = False
             salvar_biblioteca(biblioteca)
-            print(f"✅ Livro '{biblioteca[escolha]['titulo']}' devolvido!")
+            print(f" Livro '{biblioteca[escolha]['titulo']}' devolvido!")
         else:
-            print("❌ ID inválido ou livro não está emprestado!")
+            print(" ID inválido ou livro não está emprestado!")
     else:
-        print("❌ Digite um número válido!")
+        print(" Digite um número válido!")
 
 def main(biblioteca):
     opcao = exibir_menu()
@@ -71,9 +71,9 @@ def main(biblioteca):
         listar_livros(biblioteca, disponivel=True)
         listar_livros(biblioteca, disponivel=False)
     elif opcao == "4":
-        print("👋 Saindo...")
+        print(" Saindo...")
         return
     else:
-        print("❌ Opção inválida!")
+        print(" Opção inválida!")
 
     main(biblioteca)  
