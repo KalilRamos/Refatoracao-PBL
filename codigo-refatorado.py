@@ -42,9 +42,9 @@ def emprestar_livro(biblioteca):
             salvar_biblioteca(biblioteca)
             print(f" Livro '{biblioteca[escolha]['titulo']}' emprestado!")
         else:
-            print("❌ ID inválido ou livro já emprestado!")
+            print(" ID inválido ou livro já emprestado!")
     else:
-        print("❌ Digite um número válido!")
+        print(" Digite um número válido!")
 
 def devolver_livro(biblioteca):
     listar_livros(biblioteca, disponivel=False)
