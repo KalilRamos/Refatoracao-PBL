@@ -1,0 +1,6 @@
+{
+  "1": {"titulo": "Dom Casmurro", "emprestado": false},
+  "2": {"titulo": "1984", "emprestado": true},
+  "3": {"titulo": "O Senhor dos Anéis", "emprestado": false},
+  "4": {"titulo": "Harry Potter", "emprestado": true}
+}
